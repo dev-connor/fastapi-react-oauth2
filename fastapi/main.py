@@ -18,6 +18,6 @@ for router, kwargs in AuthRouters:
     app.include_router(router=router, **kwargs)
 
 
-@app.on_event("startup")
-async def on_startup():
-    await db.on_startup()
+# @app.on_event("startup")
+# async def on_startup():
+#     await db.on_startup()

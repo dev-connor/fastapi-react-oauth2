@@ -7,7 +7,7 @@ from pydantic import BaseSettings, Field
 
 def get_env_file():
     stage = os.environ.get('ENV') or 'dev'
-    return f'{stage}.env'
+    return '.env'
 
 
 class Settings(BaseSettings):
